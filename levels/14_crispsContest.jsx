@@ -27,7 +27,6 @@ function startLevel(map) {
         'color': 'red',
         'impassable': function (player) {
             if (player.hasItem('redKey')) {
-                player.removeItem('redKey');
                 return false;
             } else {
                 return true;
@@ -40,7 +39,6 @@ function startLevel(map) {
         'color': '#06f',
         'impassable': function (player) {
             if (player.hasItem('blueKey')) {
-                player.removeItem('blueKey');
                 return false;
             } else {
                 return true;
@@ -53,7 +51,6 @@ function startLevel(map) {
         'color': '#0f0',
         'impassable': function (player) {
             if (player.hasItem('greenKey')) {
-                player.removeItem(#{#'greenKey'#}#);
                 return false;
             } else {
                 return true;
@@ -66,7 +63,6 @@ function startLevel(map) {
         'color': 'yellow',
         'impassable': function (player) {
             if (player.hasItem('yellowKey')) {
-                player.removeItem('yellowKey');
                 return false;
             } else {
                 return true;
