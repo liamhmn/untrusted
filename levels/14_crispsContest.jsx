@@ -79,9 +79,9 @@ function startLevel(map) {
         '+ y B     R b +',
         '+   +     +   +',
         '+++++  @  +++++',
-        '+   +     +   +',
+        '+   +  A   +   +',
         '+ y R     B y +',
-        '++++++Y+Y++++++',
+        '++++++Y+G++++++',
         '    +  +  +    ',
         '    + ABy +    ',
         '    +++++++    '],
@@ -104,7 +104,7 @@ function startLevel(map) {
 
 function validateLevel(map) {
     map.validateExactlyXManyObjects(1, 'exit');
-    map.validateAtMostXObjects(1, 'theAlgorithm');
+    map.validateAtMostXObjects(2, 'theAlgorithm');
     map.validateAtMostXObjects(4, 'yellowKey');
     map.validateAtMostXObjects(2, 'blueKey');
     map.validateAtMostXObjects(1, 'redKey');
